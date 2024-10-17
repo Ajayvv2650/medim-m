@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
+    <!--- title --> 
+    <title>Medim</title> 
+    <!--- swiper demo css link --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <!--- box icon cdn link --> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+    <!--- customer css file --> 
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head> 
+<body> 
+ 
+    <!---- header section start --> 
+    <div class="header"> 
+        <a href="#"> 
+            <img class="toggle-icon" src="{% static 'images/toggle-icon.png' %}" alt="" > 
+        </a> 
+        <div class="logo"> 
+            <a href="#"> 
+                <img src="{% static 'images/logo.jpg' %}" alt="" width="200" height="100"> 
+            </a> 
+        </div> 
+    </div> 
+ 
+    <!---- hero section start --> 
+    <div class="hero"> 
+        <div class="swiper mySwiper"> 
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide slide"> 
+                    <div class="content"> 
+                        <h1>toothbrush<br>bamboo</h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut ipsam maiores veritatis natus fugiat sit tenetur, blanditiis itaque maxime?</p> 
+ 
+                        <a href="#flipkart.com">Buy Now</a> 
+                    </div> 
+                    <img src="{% static 'images/baneer.jpg' %}" alt=""> 
+                </div> 
+ 
+                <div class="swiper-slide slide"> 
+                    <div class="content"> 
+                        <h1>toothbrush<br>bamboo</h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut ipsam maiores veritatis natus fugiat sit tenetur, blanditiis itaque maxime?</p> 
+ 
+                        <a href="#">Buy Now</a> 
+                    </div> 
+                    <img src="{% static 'images/baneer2.jpg' %}" alt=""> 
+                </div> 
+ 
+                <div class="swiper-slide slide"> 
+                    <div class="content"> 
+                        <h1>toothbrush<br>bamboo</h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut ipsam maiores veritatis natus fugiat sit tenetur, blanditiis itaque maxime?</p> 
+                        <a href="#">Buy Now</a> 
+                    </div> 
+                    <img src="{% static 'images/baneer3.jpg' %}" alt=""> 
+                </div> 
+            </div> 
+          </div> 
+    </div>   
+ 
+    <!---- navigation menu section start --> 
+    <div class="navLinks"> 
+        <ul> 
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">Products</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Client</a></li> 
+            <li><a href="#">Contact</a></li> 
+        </ul> 
+        <i class='bx bx-x' id="closeBtn"></i> 
+    </div> 
+ 
+    <!---- product menu section start --> 
+    <section  class="products"> 
+        <h1>our products</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex dolores odio atque earum distinctio.</p> 
+ 
+        <div class="product-row"> 
+            <div class="product-col"> 
+                <h4>Beauty Item</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur.</p> 
+                <img src="{% static 'images/pack of 2.jpg' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price 90</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Beauty Item</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur.</p> 
+                <img src="{% static 'images/pack of 4.jpg' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price 120</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Beauty Item</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur.</p> 
+                <img src="{% static 'images/pack of 5.jpg' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price 200</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Beauty Item</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur.</p> 
+                <img src="{% static 'images/pack of 8.jpg' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price 300</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Beauty Item</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur.</p> 
+                <img src="{% static 'images/pack of 10.jpg' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price 400</span> 
+                </div> 
+            </div>  
+        </div> 
+ 
+    </section> 
+ 
+    <!---- about section start --> 
+    <section class="about"> 
+        <div class="about-row"> 
+            <div class="about-col-one"> 
+                <h1>About Our product</h1> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio esse, ut soluta incidunt commodi, minus, expedita illum cum numquam aspernatur voluptatem rerum eligendi nulla obcaecati eius sequi vero ullam quas!</p> 
+ 
+                <a href="#">Read More</a> 
+            </div> 
+            <div class="about-col-two"> 
+                <img src="{% static 'images/intro.jpg' %}" alt=""> 
+            </div> 
+        </div> 
+    </section> 
+ 
+
+    <!---- footer section start --> 
+    <div class="footer"> 
+        <div class="footer-row"> 
+            <div class="footer-col"> 
+                <h4>contact us</h4> 
+                <p><i class='bx bx-location-plus'></i>Address:India</p> 
+                <p><i class='bx bx-phone' ></i>Call:+01 123-345-6789</p> 
+                <p><i class='bx bx-envelope' ></i>Email:ajayvv2650@gmail.com</p> 
+            </div> 
+ 
+            <div class="footer-col"> 
+                <h4>Medim</h4> 
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum expedita ipsum non iure sapiente!</p> 
+ 
+            
+                <a href="#twitter.com"><i class="bx bxl-twitter"></i></a> 
+                <a href="#linked.com"><i class="bx bxl-linkedin"></i></a> 
+                <a href="#instagram.com"><i class="bx bxl-instagram"></i></a> 
+            </div> 
+            <div class="footer-col"> 
+                <h4>best products</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae laudantium, in magni quasi earum, aliquam, accusamus explicabo natus quos non voluptas adipisci expedita ipsam fuga?</p> 
+            </div> 
+        </div> 
+ 
+<div class="line"></div> 
+<div class="footer-bottom"> 
+<span>2024 All Rights Reserved. Design By medim</span> 
+</div> 
+</div> 
+<!--- swiper demo js link --> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+<!--- customer Js file --> 
+{% load static %} 
+<script src="{% static 'Js/script.js' %}"></script> 
+</body> 
+</html> 
